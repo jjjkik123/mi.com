@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+// 头部导航栏
+header {
+    width: 100%;
+    background-color: #333;
+    >.container {
+        width: 1226px;
+        height: 40px;
+        color: #b0b0b0;
+        
+        margin: 0 auto;
+        // 导航栏
+        >nav {
+            list-style: none;
+            >li {
+                float: left;
+                font-size: 12px;
+                cursor: pointer;
+                >a {
+                    height: 40px;
+                    line-height: 40px;
+                    color: #b0b0b0;
+                    border-right: 1px solid #424242;
+                    padding:0 10px;
+                }
+            }
+            >li:hover a{
+                color: white;
+            }
+            >li:first-of-type a{
+                padding-left: 0;
+            }
+            >li:last-of-type a{
+                border-right:none;
+            }
+        }
+        // 购物车
+        >.cart {
+            width: 120px;
+            height: 100%;
+            color: #b0b0b0;
+            background-color: #424242;
+            float: right;
+            text-align: center;
+            cursor: pointer;
+            .icon-gouwuche {
+                font-size: 20px;
+            }
+            span {
+                font-size: 14px;
+                display: inline-block;
+                line-height: 40px;
+            }
+            >span:last-of-type {
+                vertical-align: top;
+            }
+        }
+        >nav:last-of-type {
+            float: right;
+        }
+    }
+}
+
+// 右侧固定定位导航栏
+#fixNav {
+    width: 84px;
+    height: 561px;
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    & li {
+        height: 90px;
+        border:2px solid #f5f5f5;
+        background-color: #fff;
+        text-align: center;
+        span {
+            display: inline-block;
+            font-size: 34px;
+            margin: 16px 0 4px 0;
+        }
+        p {
+            font-size: 14px;
+            user-select: none;
+        }
+    }
+    & li:hover span{
+        color: orange;
+    }
+    & li:hover p{
+        color: orange;
+    }
+}
