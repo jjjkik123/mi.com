@@ -23,4 +23,10 @@ $ git status  #查看状态
 $ git add filname   #添加管理(添加到暂存区),指定文件
 $ git add path/     #添加指定目录
 $ git add .         #添加项目中所有文件和目录
+
+$ git rm --cached filename/path #从暂存区中移除(不管理)
+
+$ git commit -m "v 1.0.0" #提交版本
+
+$ git log #查看提交日记
 ```
