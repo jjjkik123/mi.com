@@ -29,4 +29,32 @@ $ git rm --cached filename/path #从暂存区中移除(不管理)
 $ git commit -m "v 1.0.0" #提交版本
 
 $ git log #查看提交日记
+
+$ git reset --hard 版本hash前六位 #恢复到历史版本
+
+$ git --help  #查看帮助文档
+
+$ git checkout filename #找回删除的文件
+```
+
+### 远程仓库操作
+```bash
+$ git remote add origin https://  #设置仓库源地址
+
+$ git push -u origin master #本地仓库master分支 推送到远程仓库
+
+$ git pull origin master 
+
+$ git clone https://... # 第一次获得项目 使用克隆
+```
+
+###
+```bash
+$ git branch 分支名 #创建分支
+
+$ git branch #查看分支
+
+$ git checkout 分支名 #切换分支
+
+$ git merge 分支名 #合并分支
 ```
