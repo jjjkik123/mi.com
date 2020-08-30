@@ -1,8 +1,13 @@
-import {fixNav} from '../js/lib/fixNav.js';
 import $ from '../js/lib/jquery.js';
-import {mySwiper} from '../js/lib/swiper.js'
-$(function() {
-    $('#fixNav').html(fixNav);
-    console.log(mySwiper);
-   
+import { mySwiper1, mySwiper2} from '../js/lib/swiper.js';
+$('header').load('../html/header.html');
+$('#fixNav').load('../html/fixNav.html');
+$(function () {
+    $('footer').load('../html/footer.html');
+    
 })
+// $(function() {
+
+//     console.log(mySwiper);
+
+// })

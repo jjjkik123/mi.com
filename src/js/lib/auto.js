@@ -1,5 +1,6 @@
 import Swiper from '../lib/swiper-bundle.js';
-var mySwiper1 = new Swiper('.m2', {
+
+var mySwiper3 = new Swiper('.m3', {
     // direction: 'vertical', // 垂直切换选项
     autoplay: {
         delay: 1000,//1秒切换一次
@@ -10,24 +11,39 @@ var mySwiper1 = new Swiper('.m2', {
     // 如果需要分页器
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '"><image src="../images/bp' + (index + 1) + '.jpg"></span>';
+        },
     },
     scrollbar: {
         el: '.swiper-scrollbar',
     },
-
-
     // 如果需要前进后退按钮
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
 })
 
-var mySwiper2 = new Swiper('.m1', {
+
+mySwiper3.el.onmouseover = function () {
+   
+    mySwiper3.autoplay.stop();
+    mySwiper4.autoplay.stop();
+}
+
+// // //鼠标离开开始自动切换
+mySwiper3.el.onmouseout = function () {
+    mySwiper3.autoplay.start();
+    mySwiper4.autoplay.start();
+}
+
+
+var mySwiper4 = new Swiper('.m4', {
     // direction: 'vertical', // 垂直切换选项
     autoplay: {
-        delay: 2000,//1秒切换一次
+        delay: 1000,//1秒切换一次
         disableOnInteraction: false,
     },
     loop: true, // 循环模式选项
@@ -35,19 +51,18 @@ var mySwiper2 = new Swiper('.m1', {
     // 如果需要分页器
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '"><image src="../images/bp' + (index + 1) + '.jpg"></span>';
+        },
     },
-
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
     // 如果需要前进后退按钮
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    effect: 'fade',
-    fadeEffect: {
-        crossFade: true,
-    }
-    // 如果需要滚动条
 })
-
-// export { mySwiper1, mySwiper2, mySwiper3, mySwiper4 };
-export {mySwiper1, mySwiper2};
+export {mySwiper3,mySwiper4}
