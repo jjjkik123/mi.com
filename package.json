@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jquery-lazyload": "^1.9.7",
     "swiper": "^6.1.2"
   }
 }

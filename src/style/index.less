@@ -1,10 +1,10 @@
-@import '../css/common.less';
+@import './common.less';
 
 // 头部导航栏
-@import '../css/header.less';
+@import './header.less';
 
 // 中间导航栏
-@import '../css//cNav.less';
+@import './cNav.less';
 
 // 中间核心
 #main {
@@ -40,6 +40,42 @@
             top: 0;
             left: 0;
             z-index: 1;
+            // 左侧二级导航栏
+            >.lNav_second {
+                position: absolute;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+                // width: 992px;
+                width: 0px;
+                overflow: hidden;
+                transition: all .2s ease;
+                height: 460px;
+                left: 234px;
+                border-radius: 5px;
+                background-color: white;
+                >nav {
+                    width: 992/4px;
+                    height: 100%;
+                    float: left;
+                    >li {
+                        height: 460/6px;
+                        display: flex;
+                        justify-content: left;
+                        >div {
+                            height: 70px;
+                            width:70px;
+                            >img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        p {
+                            height: 100%;
+                            line-height: 460/6px;
+                        }
+                    }
+                    
+                }
+            }
 
             >ul {
                 height: 100%;
@@ -294,7 +330,7 @@
                             >.price {
                                 margin: 0;
                                 text-align: center;
-                                color: #ff6709;
+                                color: #ff6600;
 
                                 del {
                                     color: #b0b0b0
@@ -474,7 +510,133 @@
                 transform: translate3d(0, -4px, 0);
             }
         }
+
+
+        >.nm_phone {
+            width: 992px;
+            height: 614px;
+            float: left;
+
+
+            // 右侧小照片两个
+            .r1 {
+                width: 234px;
+                height: 143px;
+                padding-top: 50px;
+                background-color: white;
+                position: relative;
+
+                >.title {
+                    margin: -10px 110px 5px 30px;
+                    white-space: normal;
+                    line-height: 22px;
+                    overflow: auto;
+                    overflow-wrap: normal;
+                    // float: left;
+                }
+
+                .more {
+                    font-size: 18px;
+                    margin-top: 6px;
+                }
+
+                >div {
+                    position: absolute;
+                    right: 20px;
+                    top: 32px;
+                    height: 80px;
+                    width: 80px;
+
+                    >span {
+                        color: orange;
+                        font-size: 44px;
+                        margin-left: 30px;
+                        line-height: 88px;
+                    }
+                }
+
+                >.price {
+                    // float: left;
+                    color: #757575;
+                    margin: 0 110px 0 30px;
+                }
+
+            }
+
+            >li {
+                width: 234px;
+                height: 300px;
+                background-color: white;
+                margin-left: 14px;
+                padding: 20px 0;
+                margin-bottom: 14px;
+                border-radius: 10px;
+                transition: all .4s;
+                float: left;
+                cursor: pointer;
+                user-select: none;
+                >a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    >div {
+                        width: 160px;
+                        height: 160px;
+                        margin: 0px auto 30px;
+    
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+    
+    
+    
+    
+    
+                    >.title {
+                        margin: 0 20px 3px;
+                        text-align: center;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-overflow: ellipsis;
+                        color: #212121;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+    
+                    >.desc {
+                        margin: 0 20px 12px;
+                        text-align: center;
+                        font-size: 12px;
+                        text-overflow: ellipsis;
+                        color: #b0b0b0;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+    
+                    >.price {
+                        margin: 0;
+                        text-align: center;
+                        color: #ff6709;
+    
+                        del {
+                            color: #b0b0b0
+                        }
+                    }
+                }
+
+                
+            }
+
+            >li:hover {
+                box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+                transform: translate3d(0, -4px, 0);
+            }
+        }
     }
+
+    
 }
 
 // 尾部

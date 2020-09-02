@@ -42,7 +42,7 @@
     <main id="cart">
         <section class="m_cart">
             <section class="cart_title">
-                <div class="cart_check"><input type="checkbox" name="" id="">全选</div>
+                <div class="cart_check"><input id="cart_check" type="checkbox" name="" >全选</div>
                 <div class="cart_img"></div>
                 <div class="cart_name">商品名称</div>
                 <div class="cart_price">单价</div>
@@ -51,9 +51,9 @@
                 <div class="cart_action">操作</div>
             </section>
             <section class="cart_list">
-                <div class="list_item">
+                <!-- <div class="list_item"> -->
                     <!-- 订单项 -->
-                    <div class="cart_check"><input type="checkbox" name="" id=""></div>
+                    <!-- <div class="cart_check"><input type="checkbox" name="" id=""></div>
                     <div class="cart_img item_img">
                         <img src="../images/item1.jpg" alt="">
                     </div>
@@ -74,9 +74,9 @@
                     </div>
 
                 </div>
-                <div class="list_item">
+                <div class="list_item"> -->
                     <!-- 订单项 -->
-                    <div class="cart_check"><input type="checkbox" name="" id=""></div>
+                    <!-- <div class="cart_check"><input type="checkbox" name="" id=""></div>
                     <div class="cart_img item_img">
                         <img src="../images/item1.jpg" alt="">
                     </div>
@@ -96,7 +96,7 @@
                         <div class="del_action">×</div>
                     </div>
 
-                </div>
+                </div> -->
             </section>
             
         </section>
@@ -105,12 +105,12 @@
             <p>
                 <a href="#">继续购物</a>
                 <span>|</span>
-                共<span> 1 </span>件商品，已选择<span> 0 </span>件
+                共<span id="productNum">  </span>件商品，已选择<span id="selectNum">  </span>件
             </p>
             <!-- 付钱按钮 -->
             <div class="payMoney">去结算</div>
             <div class="payTotal">
-                合计：<span>5599</span>元
+                合计：<span class="payTotal1">0</span>元
             </div>
         </div>
     </main >

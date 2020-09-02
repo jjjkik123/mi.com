@@ -13,6 +13,7 @@ var mySwiper3 = new Swiper('.m3', {
         el: '.swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
+            
             return '<span class="' + className + '"><image src="../images/bp' + (index + 1) + '.jpg"></span>';
         },
     },

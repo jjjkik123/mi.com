@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/login.css">
     <script src="https:////at.alicdn.com/t/font_2032327_m9d9lqyx5c.js
     "></script>
+    <script src="../js/login.js" type="module"></script>
 </head>
 
 <body>
@@ -26,11 +27,12 @@
                     <span>|</span>
                     <a href="#">扫码登录</a>
                 </div>
-                <form action="" method="" name="">
+                <div id="loginForm" action="" method="" name="">
                     <input type="text" class="form-control" placeholder="账号" id="username" name="username">
+                    <span class="username"></span>
                     <input type="password" class="form-control" placeholder="密码" id="password" name="password">
-                    <button type="submit" class="btn btn-warning btn-block">登录</button>
-                </form>
+                    <button id="btn" type="submit" class="btn btn-warning btn-block">登录</button>
+                </div>
                 <p>手机短信登录/注册</p>
                 <p><a href="../html/regist.html">立即注册</a><span>|</span><a href="#">忘记密码？</a></p>
                 <fieldset>
