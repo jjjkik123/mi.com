@@ -14,7 +14,7 @@ $('#myform input').on('input', function () {
             let username = $('#username').val();
             $.ajax({
                 type: "get",
-                url: "../interface/existUser.php",
+                url: "../../interface/existUser.php",
                 data: {'username':username},
                 success: function (response) {
                     
@@ -36,7 +36,7 @@ $('#btn').on('click', function () {
     registStr = JSON.stringify(registObj);
     $.ajax({
         type: "psot",
-        url: "../php/regist.php",
+        url: "../../interface/regist.php",
         data: registStr,
         dataType: "json",
         success: function (response) {

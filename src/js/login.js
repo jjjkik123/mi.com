@@ -4,7 +4,7 @@ import '../js/lib/jquery.md5.js';
 $('#username').on('input', function () {
     $.ajax({
         type: "post",
-        url: "../interface/existUser.php",
+        url: "../../interface/existUser.php",
         data: { 'username': $(this).val() },
         dataType: "json",
         success: function (response) {
@@ -22,7 +22,7 @@ $('#btn').on('click', function () {
     let password = $.md5($('#password').val() + 'fbq');
     $.ajax({
         type: "post",
-        url: "../interface/login.php",
+        url: "../../interface/login.php",
         data: {
             'username':username,
             'password':password

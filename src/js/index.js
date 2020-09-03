@@ -17,7 +17,7 @@ countdown();
 (function () {
     $.ajax({
         type: "get",
-        url: "../interface/index.php",
+        url: "../../interface/index.php",
         dataType: "json",
         success: function (res) {
             let temp = '';

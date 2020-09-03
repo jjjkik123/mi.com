@@ -16,7 +16,7 @@ var temp1 = [];
     
     $.ajax({
         type: "get",
-        url: "../interface/product.php",
+        url: "../../interface/product.php",
         data: {
             id: id
         },

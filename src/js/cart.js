@@ -8,14 +8,6 @@ checkAll();
 deleteItem();
 
 
-$.ajax({
-    type: "get",
-    url: "../interface/existUser.php",
-    data: "data",
-    dataType: "dataType",
-    success: function (response) {
-        
-    }
-});
+
 
 // SELECT product.* from users,product,items where items.u_id=users.id and items.p_id = product.p_id and users.id = 1
