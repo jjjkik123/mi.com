@@ -61,8 +61,9 @@ $(function() {
             location.reload();
         })
     }
-    
 })
+
+
 
 
 
